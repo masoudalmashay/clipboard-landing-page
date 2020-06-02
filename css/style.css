@@ -1,0 +1,269 @@
+:root {
+    --lightgray: rgba(82, 82, 82, 0.849);
+    --strongCyan: hsl(171, 66%, 44%);
+    --lightBlue: hsl(233, 100%, 69%);
+    --darkGrayish: hsl(210, 10%, 33%);
+    --grayishBlue: hsl(201, 11%, 66%);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Bai Jamjuree";
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+
+h2 {
+    font-size: 21px;
+}
+
+h3 {
+    font-size: 19px;
+}
+
+header {
+    background-image: url("../images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.container-re {
+    margin: 0 5px 0 5px;
+    overflow: hidden;
+}
+
+.container-lg {
+    margin: 0 15px 0 15px;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+.block {
+    display: block;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+header img {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.main-head {
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.load {
+    text-align: center;
+    margin-bottom: 45px;
+    color: var(--lightgray);
+    line-height: 1.3;
+}
+
+.download-btn {
+    display: block;
+    margin-bottom: 25px;
+    border: none;
+    padding: 15px;
+    width: 250px;
+    border-radius: 50px;
+    /* color:white; */
+}
+
+.ios {
+    background-color: var(--strongCyan);
+    border-bottom: 2px solid hsl(171, 66%, 31%);
+}
+
+.mac {
+    background-color: var(--lightBlue);
+    border-bottom: 2px solid hsl(233, 56%, 46%);
+    margin-bottom: 130px;
+}
+
+.sec-head {
+    margin-bottom: 15px;
+}
+
+.img-computer {
+    margin-bottom: 50px;
+    max-width:300px;
+    max-height: 300px;
+    width: 100%;
+}
+
+
+.img-devices {
+    max-width:350px;
+    max-height: 350px;
+    width: 100%;
+}
+
+
+.thi-head {
+    margin-bottom: 15px;
+}
+
+.access-cli .sec-head {
+    margin-top: 150px;
+}
+
+.icon {
+    margin-bottom: 25px;
+    margin-top: 70px;
+}
+
+
+.logos img:first-of-type {
+    margin-top: 100px;
+}
+
+.logos img:last-of-type {
+    margin-bottom: 130px;
+}
+.logo {
+    margin-bottom: 50px; 
+}
+
+footer {
+    background-color: rgb(187, 187, 187);
+    padding-bottom: 15px;
+}
+
+.logo-footer {
+    margin-top:  15px;
+}
+
+ul .item {
+    margin-bottom: 25px;
+}
+
+footer div  {
+    padding: 25px 0 35px 0;
+}
+
+.f-icon {
+    margin-right: 10px;
+}
+
+@media screen and (min-width: 375px) {
+    .inline-block {
+        display: inline-block;
+    }
+    .container-re {
+        margin: 30px 0 30px 0;
+    }
+
+    p {
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+        line-height: 1.5;
+    }
+
+    h1, h2, h3 {
+        line-height: 1.5;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .img-computer {
+        height: 500px;
+        width: 600px;
+    }
+    .access-cli .sec-head {
+        margin-top: 70px;
+    }
+    .img-devices {
+        max-width: 600px;
+    }
+    .grid-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .load-none {
+        margin-bottom: 0;
+    }
+    .flex {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .logos {
+        margin: 100px 0 100px 0;
+    }
+    .logos > img {
+        margin-bottom: 0;
+        
+    }
+
+    .logos img:first-of-type {
+        margin-top: 0;
+    }
+
+    .logos img:last-of-type {
+        margin-bottom: 0;
+    }
+    .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr
+    }
+
+    .fr-2 {
+        grid-template-columns: 1fr 2fr
+    }
+    footer {
+        padding-top: 25px
+    }
+
+    footer div {
+        padding: 0
+    }
+    .logo-footer {
+        margin-top: 0;
+    }
+
+    ul .item {
+        margin-bottom: 0;
+    }
+
+    .left {
+        text-align: left;
+        /* margin:0; */
+    }
+
+}
+
+.link-hover:hover {
+    color: var(--strongCyan);
+    cursor: pointer;
+}
+
+.btn-hover:hover {
+    opacity: 0.75;
+    cursor: pointer;
+}
